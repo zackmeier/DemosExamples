@@ -3,8 +3,7 @@ function Get-Stuff {
     param (
         [Parameter(
             ValueFromPipeline = $true,
-            ValueFromPipelineByPropertyName = $true,
-            ParameterSetName = 'Parameter Set 1')]
+            ValueFromPipelineByPropertyName = $true)]
         [int[]]
         $Number
     )
