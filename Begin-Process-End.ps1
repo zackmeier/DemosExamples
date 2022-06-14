@@ -30,6 +30,6 @@ function Get-Stuff {
 Get-Stuff -Number 1,2,3   # Process block runs once, but loops through all entires
 1,2,3 | Get-Stuff         # Process block runs three times, one entry per loop with three loops
 
-# output is the same, as verbose are in different output stream
+# the verbose parameter allows visibility how begin-process-end blocks work
 Get-Stuff -Number 1,2,3 -Verbose
 1,2,3 | Get-Stuff -Verbose
