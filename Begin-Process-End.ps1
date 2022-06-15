@@ -14,6 +14,7 @@ function Get-Stuff {
     
     process {
         Write-Verbose "Process"
+        Write-Error "error time"
         ForEach ($n in $Number) {
             Write-Host "This number is $n"
             $nDouble = $n * 2
